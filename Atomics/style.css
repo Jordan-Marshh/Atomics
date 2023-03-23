@@ -7,56 +7,31 @@
   }
   
   .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
-    grid-gap: 130px;
-    padding: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
     transition: ease 2s;
   }
 
-  .menu a:hover {
-    transform:scale(1.01)
-  }
 
   #div-container {
-    height: 400px;
-    width: 300px;
-    position: relative;
+    height: 1200px;
+    width:1200px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
   }
 
-  .top-section {
-    border-radius:10px;
-  }
-
-  #div-container:hover ~ .bottom-section {
-    background-color:gray;
-  }
-
-  .top-section {
-    height: 266.67px; /* 400px / 3 * 2 */
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .bottom-section {
-    height: 133.33px; /* 400px / 3 */
-    width: 100%;
-    background-color: gray;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 50px;
-    text-align:center;
-    color:black;
-  }
-
-  .menu-item:hover {
-    
-  }
+ .clothes-div{
+  background-color:white;
+  width:250px;
+  height:400px;
+  margin: 50px;
+  padding:0px;
+  border: 2px solid red;
+}
 
   .side-menu button {
     width: 100%;
@@ -254,51 +229,14 @@ nav:focus ~ .menu-item {
         transform:scale(1.1)  
 }
 
-.gray-box {
-    width: 1000px;
-    height: 1000px;
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0 auto;
-  }
 
-  .gray-box h1 {
-    font-size:60px;
-    padding-top:40px;
-  }
-
-  .gray-box p {
-    padding:20px;
-  }
-
-  .gray-box .contacts {
-    font-size:30px;
-  }
 
   a {
     text-decoration:none;
     color:none;
   }
 
-  .transparent-div {
-    width: 1300px;
-    height: 600px;
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 15px;
-    margin: 0 auto;
-    margin-top:100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .transparent-div iframe {
-    width:1200px;
-    height:550px;
-    border-radius:15px;
-  }
+ 
 
   #footer {
     height: 200px;

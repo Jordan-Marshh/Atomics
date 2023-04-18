@@ -39,15 +39,15 @@
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    margin-bottom:150px;
+    margin-bottom:75px;
 }
 
  .clothes-div{
     background-color:white;
     width:250px;
     height:400px;
-    margin: 30px;
-    border: 2px solid red;
+    margin:1em;
+    border: 2px solid gray;
     padding:0px;
 }
 
@@ -59,7 +59,7 @@
   #about {
     text-align:center;
     color:white;
-    background-color:gray;
+    background-color:#717171;
     width:100%;
     height:40em;
     border-radius:0px;
@@ -67,16 +67,32 @@
     margin-top:0em;
   }
 
+  .div-container > .shirts {
+    margin-top:5em;
+    border-bottom: 1px solid white;
+    padding-bottom:5em;
+    padding-inline:7em;
+  }
+
+  .div-container > .hoodies {
+    border-bottom: 1px solid white;
+    padding-bottom:5em;
+    padding-inline:7em;
+  }
+
   #main > .div-container > .shirts > h1 {
     color:white;
+    font-size:55px;
   }
 
   #main > .div-container > .hoodies > h1 {
     color:white;
+    font-size:55px;
   }
 
   #main > .div-container > .pants > h1 {
     color:white;
+    font-size:55px;
   }
 
   #about h1 {
@@ -107,7 +123,7 @@
   .header {
     height: 150px;
     margin:0;
-    background-color:#DBDBDB;
+    background-color:#717171;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -436,7 +452,7 @@ nav:focus ~ .menu-item {
   .header {
       height: 150px;
       margin:0;
-      background-color:#DBDBDB;
+      background-color:#717171;
       display:flex;
       flex-direction:column;
       justify-content:center;
@@ -456,18 +472,99 @@ nav:focus ~ .menu-item {
     margin-top:0em;
   }
   
-  .div-container {
-    height:70%;
-    width:430px;
+  #main > .div-container {
+    height:30%;
+    width:100%;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    margin-bottom:150px;
+    margin:0em;
+    align-items:center;
 }
 
- .clothes-div{
+  .div-container > .shirts {
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:20%;
+    margin-block:2.5em;
+    border-bottom: 1px solid white;
+    padding-bottom:4em;
+    padding-inline:0em;
+  }
+
+  .div-container > .shirts > h1 {
+    font-size:45px;
+  }
+
+  .div-container > .shirts > .shirts-divs {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+  }
+
+  #main > .div-container > .shirts > .shirts-divs div {
+    margin:1em;
+    height:15em;
+    width:13em;
+  }
+
+  .div-container > .hoodies {
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:20%;
+    border-bottom: 1px solid white;
+    padding-bottom:4em;
+    padding-inline:0em;
+  }
+
+  .div-container > .hoodies > h1 {
+    font-size:45px;
+  }
+
+  .div-container > .hoodies > .hoodies-divs {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+  }
+
+  .div-container > .hoodies > .hoodies-divs > div {
+    margin:1em;
+    height:15em;
+    width:13em;
+  }
+
+  .div-container > .pants {
+    width:100%;
+    display:flex;
+    align-items:center;
+    height:20%;
+    margin-bottom:7em;
+  }
+
+  .div-container > .pants > h1 {
+    font-size:45px;
+  }
+
+  .div-container > .pants > .pants-divs {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+  }
+
+  .div-container > .pants > .pants-divs > div {
+    margin:1em;
+    height:15em;
+    width:13em;
+  }
+
+  .clothes-div{
     background-color:white;
     width:250px;
     height:400px;
@@ -504,7 +601,26 @@ nav:focus ~ .menu-item {
 #about {
   margin-top:20px;
   border-radius:0;
+  height:45em;
+  background-color: #5d5d5d;
 }
+
+#about > p {
+  display:flex;
+  flex-wrap:wrap;
+  margin-inline:0
+}
+
+.about-wrapper > #about > .form-wrapper > form > input {
+  width:30%;
+  margin-block:0.5em;
+}
+
+.about-wrapper > #about > .form-wrapper > form > textarea {
+  width:40%;
+  height:3em;
+  margin-block:0.5em;
+  margin-bottom:0;
 
   hr {
     display:none;
@@ -530,7 +646,7 @@ nav:focus ~ .menu-item {
   .header {
     height: 200px;
     margin:0;
-    background-color:#DBDBDB;
+    background-color:#717171;
     display:flex;
     justify-content:center;
     align-items:center;

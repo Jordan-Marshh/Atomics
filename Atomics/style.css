@@ -275,7 +275,10 @@ nav:focus ~ .menu-item {
     transform:scale(1.1)  
 }
 
-
+@keyframes rainbow {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
 
   a {
     text-decoration:none;

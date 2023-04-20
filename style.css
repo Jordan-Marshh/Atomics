@@ -1,10 +1,12 @@
- 
+ @media (min-width:1000px) {
+  
+ }
  #main {
   display:flex;
   justify-content:center;
  }
 
- .shirts {
+ #shirts {
   display:flex;
   flex-direction:column;
  }
@@ -13,7 +15,7 @@
   display:flex;
  }
 
- .hoodies {
+ #hoodies {
   display:flex;
   flex-direction:column
  }
@@ -22,7 +24,7 @@
   display:flex;
  }
 
- .pants {
+ #pants {
   display:flex;
   flex-direction:column;
  }
@@ -67,30 +69,30 @@
     margin-top:0em;
   }
 
-  .div-container > .shirts {
+  .div-container > #shirts {
     margin-top:5em;
     border-bottom: 1px solid white;
     padding-bottom:5em;
     padding-inline:7em;
   }
 
-  .div-container > .hoodies {
+  .div-container > #hoodies {
     border-bottom: 1px solid white;
     padding-bottom:5em;
     padding-inline:7em;
   }
 
-  #main > .div-container > .shirts > h1 {
+  #main > .div-container > #shirts > h1 {
     color:white;
     font-size:55px;
   }
 
-  #main > .div-container > .hoodies > h1 {
+  #main > .div-container > #hoodies > h1 {
     color:white;
     font-size:55px;
   }
 
-  #main > .div-container > .pants > h1 {
+  #main > .div-container > #pants > h1 {
     color:white;
     font-size:55px;
   }
@@ -271,7 +273,7 @@ body {
 .sidebar ul li a:hover {
   transform: scale(1.4);
   z-index:1000;
-  border-bottom: 0.5px solid blue;
+  border-bottom: 0.5px solid gray;
   opacity:1;
 }
 
@@ -350,10 +352,10 @@ nav:focus ~ .menu-item {
     margin-top:200px;
     bottom: 0;
     left: 0;
-    background-color: gray;
+    background-color: #DBDBDB;
     margin-bottom:0px;
     display:flex;
-    
+    justify-content:space-between;
   }  
   
   .footer-left {
@@ -363,16 +365,29 @@ nav:focus ~ .menu-item {
     color:black;
     display:flex;
     justify-content:row;
-    align-items:flex-start;
+    align-items:center;
+    font-size:20px;
   }
   
   .footer-right {
-    width: 40%;
+    width: 30%;
     text-align: right;
     background-color: #DBDBDB;
     color:black;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    align-items:center;
   }
-  
+
+  .footer-right a {
+    margin-top:2em;
+  }
+
+  .footer-right > p {
+    padding-right:1em;
+  }
+
   #footer > .footer-left a {
     color:black;
   }
@@ -390,8 +405,8 @@ nav:focus ~ .menu-item {
     margin:7px;
   }
 
-  .footer-right img {
-    color:black;
+  .footer-right > .copyright {
+    margin-right:1em;
   }
 
   hr {
@@ -416,7 +431,7 @@ nav:focus ~ .menu-item {
     color:white;
   }
 
-  .map > iframe {
+  #map > iframe {
     width: 100%;
   }
 
@@ -435,6 +450,18 @@ nav:focus ~ .menu-item {
   width:15%;
   height:3em;
   margin-bottom:0;
+}
+
+.shirts-divs > .clothes-div img {
+  width:250px;
+}
+
+.hoodies-divs > .clothes-div img {
+  width:250px;
+}
+
+.pants-divs > .clothes-div img {
+  width:250px;
 }
 
 
@@ -470,6 +497,7 @@ nav:focus ~ .menu-item {
     height: 100%;
     width: 100%;
     margin-top:0em;
+    margin-left:0;
   }
   
   #main > .div-container {
@@ -484,7 +512,7 @@ nav:focus ~ .menu-item {
     align-items:center;
 }
 
-  .div-container > .shirts {
+  .div-container > #shirts {
     width:100%;
     display:flex;
     align-items:center;
@@ -495,24 +523,24 @@ nav:focus ~ .menu-item {
     padding-inline:0em;
   }
 
-  .div-container > .shirts > h1 {
+  .div-container > #shirts > h1 {
     font-size:45px;
   }
 
-  .div-container > .shirts > .shirts-divs {
+  .div-container > #shirts > .shirts-divs {
     display:flex;
     flex-direction:column;
     width:100%;
     align-items:center;
   }
 
-  #main > .div-container > .shirts > .shirts-divs div {
+  #main > .div-container > #shirts > .shirts-divs div {
     margin:1em;
-    height:15em;
+    height:22em;
     width:13em;
   }
 
-  .div-container > .hoodies {
+  .div-container > #hoodies {
     width:100%;
     display:flex;
     align-items:center;
@@ -522,24 +550,24 @@ nav:focus ~ .menu-item {
     padding-inline:0em;
   }
 
-  .div-container > .hoodies > h1 {
+  .div-container > #hoodies > h1 {
     font-size:45px;
   }
 
-  .div-container > .hoodies > .hoodies-divs {
+  .div-container > #hoodies > .hoodies-divs {
     display:flex;
     flex-direction:column;
     width:100%;
     align-items:center;
   }
 
-  .div-container > .hoodies > .hoodies-divs > div {
+  .div-container > #hoodies > .hoodies-divs > div {
     margin:1em;
-    height:15em;
+    height:22em;
     width:13em;
   }
 
-  .div-container > .pants {
+  .div-container > #pants {
     width:100%;
     display:flex;
     align-items:center;
@@ -547,30 +575,63 @@ nav:focus ~ .menu-item {
     margin-bottom:7em;
   }
 
-  .div-container > .pants > h1 {
+  .div-container > #pants > h1 {
     font-size:45px;
   }
 
-  .div-container > .pants > .pants-divs {
+  .div-container > #pants > .pants-divs {
     display:flex;
     flex-direction:column;
     width:100%;
     align-items:center;
   }
 
-  .div-container > .pants > .pants-divs > div {
+  .div-container > #pants > .pants-divs > div {
     margin:1em;
-    height:15em;
+    height:22em;
     width:13em;
   }
 
-  .clothes-div{
+  #shirts > .shirts-divs > .clothes-div{
     background-color:white;
     width:250px;
-    height:400px;
     margin: 30px;
-    border: 2px solid red;
-    padding:0px;
+    border: 2px solid gray;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+
+  #hoodies > .hoodies-divs > .clothes-div {
+    background-color:white;
+    width:250px;
+    margin: 30px;
+    border: 2px solid gray;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+  }
+
+  #pants > .pants-divs > .clothes-div {
+    background-color:white;
+    width:250px;
+    margin: 30px;
+    border: 2px solid gray;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+  }
+
+ .shirts-divs > .clothes-div img {
+  width:200px;
+}
+
+.hoodies-divs > .clothes-div img {
+  width:200px;
+}
+
+.pants-divs > .clothes-div img {
+  width:200px;
 }
 
 .sidebar{
@@ -598,11 +659,15 @@ nav:focus ~ .menu-item {
   flex-direction:column;
 }
 
+.about-wrapper {
+  background-color:#717171;
+}
+
 #about {
   margin-top:20px;
   border-radius:0;
   height:45em;
-  background-color: #5d5d5d;
+  background-color: #717171;
 }
 
 #about > p {
@@ -621,6 +686,7 @@ nav:focus ~ .menu-item {
   height:3em;
   margin-block:0.5em;
   margin-bottom:0;
+}
 
   hr {
     display:none;
@@ -628,6 +694,16 @@ nav:focus ~ .menu-item {
 
   #about hr {
     display:block;
+  }
+
+  .footer-right {
+    flex-wrap:wrap;
+    width:35em;
+  }
+
+  .footer-right a {
+    margin:0;
+    align-self:flex-end;
   }
  }
 
@@ -642,7 +718,7 @@ nav:focus ~ .menu-item {
  
  
  
- @media (max-width: 1000px){
+ @media (max-width: 1000px) and (min-width:500px){
   .header {
     height: 200px;
     margin:0;
@@ -691,4 +767,14 @@ nav:focus ~ .menu-item {
   hr {
     width:80%;
   }
+
+  .about-wrapper {
+    height:55em;
+    background-color: #717171;
+   }
+
+   .footer-right {
+    width:35em;
+   }
+   
  }

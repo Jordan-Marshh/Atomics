@@ -1066,6 +1066,7 @@ header.header ul li .search-result-list ul li {
 
 /* -------------------------- 3. slider -------------------- */
 .single-slider {
+  background-attachment:fixed;
   background-size: cover;
   background-position: center;
 }
@@ -1298,9 +1299,6 @@ header.header ul li .search-result-list ul li {
   color: #333333;
   display: inline-block;
   margin-bottom: 7px;
-}
-.category-box .category-content a:hover {
-  color: #eb2323;
 }
 .category-box .category-content p {
   color: #7e7e7e;

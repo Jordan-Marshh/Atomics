@@ -402,6 +402,10 @@
   }
   .category-img {
     margin-bottom: 25px;
+    border:1px solid gray;
+  }
+  .category-img:hover {
+    border:5px solid gray;
   }
   .category-right {
     padding: 0 5px;

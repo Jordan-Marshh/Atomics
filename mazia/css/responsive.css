@@ -300,6 +300,7 @@
   }
   .footer-menu {
     margin-top: 60px;
+    margin-left: 10px;
   }
   .product-popup-container form input[type="number"] {
     width: 174px;

@@ -514,6 +514,13 @@ a#scrollUp:hover i {
   color: #eb2323 !important;
 }
 
+.payment-wrapper {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
 /* -------------------------- 2. header ----------------------------- */
 .header {
   background-color: transparent;

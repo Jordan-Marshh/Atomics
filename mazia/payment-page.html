@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/4db9a1fea2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
         <div class="container-fluid">
             <div class="header-nav position-relative">
                     <div class="row align-items-center">
-                       
+
 
                         <div class="col-xl-5 col-lg-6 hidden-md position-static">
                             <div class="header-nav" style="margin-left:30px;">
@@ -52,7 +53,7 @@
                                     <ul>
                                         <li ><a href="index.html" style="color:white;"><span>Home</span></a>
                                         </li>
-                                        <li class="position-static"><a href="javascript:void(0)" style="color:white;"><span>Shop  <i class="fal fa-angle-down"></i></span></a>
+                                        <li class="position-static"><a href="javascript:void(0)" style="color:white"><span>Shop  <i class="fal fa-angle-down"></i></span></a>
                                             <ul class="submenu">
                                                 <li><a href="shop-shirts.html">Shirts</a></li>
                                                 <li><a href="" style="color:gray">Hoodies</a></li>
@@ -72,11 +73,14 @@
                                 <a href="index.html"><img src="images/logo.png" alt="" style="margin-left:85px;"></a>
                             </div>
                         </div>
+
+                        
+                    </div>
             </div>
             <div class="mobile-menu visible-sm">
                 <div id="mobile-menu">
                     <ul>
-                        <li><a  class="pl-3" href="javascript:void(0)">Home</a>
+                        <li><a  class="pl-3" href="index.html">Home</a>
                             <ul class="pl-4">
                                 
                                 
@@ -84,13 +88,14 @@
                         </li>
                         <li><a  class="pl-3" href="javascript:void(0)">Shop</a>
                             <ul>
-                                <li><a href="shop-shirts.html">Shirts</a></li>
-                                <li><a href="shop-hoodies.html">Hoodies</a></li>
-                                <li><a href="shop-pants.html">Pants</a></li>
+                                <li><a href="shirts.html">Shirts</a></li>
+                                <li><a href="hoodies.html">Hoodies</a></li>
+                                <li><a href="pants.html">Pants</a></li>
+                                <li><a href="hats.html">Hats</a></li>
                             </ul>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="payment-page.html">Payment</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,6 +104,19 @@
     </header>
     <!-- header section end -->
 
+    <section class="contact-area pb-30" data-background="assets/img/bg/bg-map.png">
+        <div class="has-breadcrumb-bg mb-120" style="background-image: url('images/background.jpg');">
+            <div class="breadcrumb-content d-flex justify-content-center align-items-center" style="flex-direction: column;">
+             <h2 class="title" style="color:white;">Payment</h2>
+             <nav aria-label="breadcrumb" class="mb-40">
+                 <ol class="breadcrumb p-0 m-0">
+                     <li class="breadcrumb-item" ><a href="index.html" style="color:#e6e6e6;">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page" style="color:#e6e6e6;">Payment</li>
+                 </ol>
+             </nav>
+            </div>
+         </div>
+    </section>
 
 
     <!-- shop body section start -->
@@ -124,9 +142,13 @@
         <!-- breadcrumb-area-end -->
 
         <div class="payment-wrapper">
-            <a href="https://www.venmo.com/u/Jordan-Marshh" target="_blank"><img src="images/payment/venmo.jpg"></a>
-            <a href="https://cash.app/$jordanmarshh" target="_blank"><img src="images/payment/cash-app.jpg"></a>
-            <a href="https://cash.app/$jordanmarshh" target="_blank"><img src="images/payment/cash-app-text.png"></a>
+            <div class="venmo">
+                <a href="https://www.venmo.com/u/Jordan-Marshh" target="_blank"><img src="images/payment/venmo-small.png" style="border:1px solid black; margin:20px"></a>
+            </div>
+            <div class="cash-app" style="display:flex; flex-direction:column; justify-content:center; align-items:center; border:1px solid black; margin:20px; padding-inline:10px;">
+                <a href="https://cash.app/$jordanmarshh" target="_blank"><img src="images/payment/cash-app.jpg"></a>
+                <a href="https://cash.app/$jordanmarshh" target="_blank"><img src="images/payment/cash-app-text-small.png"></a>
+            </div> 
         </div>
 
 

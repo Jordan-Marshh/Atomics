@@ -187,7 +187,7 @@
     left: -26px !important;
   }
   .header-2 .mean-container a.meanmenu-reveal span {
-    background: #222;
+    background: white;
 }
 .has-breadcrumb-bg{
   margin-bottom: 50px;
@@ -258,7 +258,7 @@
     z-index: 999;
   }
   a.meanmenu-reveal.meanclose{
-    color: #222 !important;
+    color: white !important;
   }
   .mean-nav {
     position: fixed;
